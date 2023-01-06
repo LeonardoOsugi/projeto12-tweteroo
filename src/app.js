@@ -54,13 +54,11 @@ server.post("/tweets", (req, res) => {
         tweet
     });
 
-    console.log(tweetsAvatares);
-
     res.sendStatus(200);
 })
 
 server.get("/tweets", (req, res) =>{
-    res.send("blablabla blublu")
+    res.send(tweetsAvatares.reverse().slice(-10));
 })
 
 server.listen(5000, () => {"funfou"});
